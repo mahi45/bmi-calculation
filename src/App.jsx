@@ -1,9 +1,5 @@
 import { useState } from "react";
 import "./App.css";
-import underweight from "./assets/underweight.png";
-import overweight from "./assets/overweight.png";
-import healthy from "./assets/healthy.png";
-import search from "./assets/search.png";
 
 function App() {
   const [weight, setWeight] = useState("");
@@ -11,6 +7,11 @@ function App() {
   const [bmi, setBmi] = useState("");
   const [msg, setMsg] = useState("");
   const [imgSrc, setImgSrc] = useState();
+
+  const underweight = "https://i.ibb.co/jGG2FwQ/underweight.png";
+  const overweight = "https://i.ibb.co/28BP6Z0/overweight.png";
+  const healthy = "https://i.ibb.co/1QKWZ3v/healthy.png";
+  const search = "https://i.ibb.co/ZJpKqLz/search.png";
 
   const bmiCalc = (event) => {
     event.preventDefault();
